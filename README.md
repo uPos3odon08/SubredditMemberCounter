@@ -16,7 +16,7 @@ Setup:
 
 8. save the script by hitting "ctrl+s" on your keyboard
 
-9. in CMD or the terminal run "cd SubredditmemberCounter"
+9. in CMD or the terminal run "cd SubredditMemberCounter"
 
 10. run "pip -R install Requirements.txt" in CMD or the Terminal
 
