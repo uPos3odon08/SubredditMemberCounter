@@ -12,7 +12,7 @@ subreddit = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]")
 
 now = datetime.now()
 
-current_time = now.strftime("%H:%M:%S")
+current_time = now.strftime("%Hh %Mm %Ss")
 
 x = 1
 while True: 
