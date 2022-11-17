@@ -4,7 +4,7 @@ Setup:
 
 2. clone this project
 
-3. go to "https://www.old.reddit.com/prefs/apps/" and create an app called "Reddit scraper"
+3. go to "https://old.reddit.com/prefs/apps/" and create an app called "Reddit scraper"
 
 4. under the app creation make sure you mark it as a script and set the redirect url to "http://localhost:8080"
 
