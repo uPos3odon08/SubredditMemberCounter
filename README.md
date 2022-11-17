@@ -14,7 +14,7 @@ Setup:
 
 7. then replace "[NAME OF THE SUBREDDIT WITHOUT THE r/]" with the name of the subreddit you wanna see the exact number of members of 
 
-8. save the script by hitting "ctrl+c" on your keyboard
+8. save the script by hitting "ctrl+s" on your keyboard
 
 9. in CMD or the terminal run "cd SubredditmemberCounter"
 
