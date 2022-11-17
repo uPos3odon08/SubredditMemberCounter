@@ -8,19 +8,17 @@ reddit = praw.Reddit(
     user_agent="subreddit member amount scraper 1.5 by u/[YOUR REDDIT USERNAME HERE]",
 )
 
-subreddit = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]")
+subreddit = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]") #let's the script know what subreddit to print the name of 
 
 
 
 print("Author = u/Pos3odon08")
 
-x = 1
 while True: 
  now = datetime.now()
- subs = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]").subscribers
- current_time = now.strftime("%Hh %Mm %Ss")
+ subs = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]").subscribers #let's the script know what subred dit to check
+ current_time = now.strftime("%Hh %Mm %Ss") 
  print(subreddit.display_name, end= '')
  print("     subs", subs, end= '') 
  print("     🕒 =", current_time)
- time.sleep(100)
-x += 1
+ time.sleep(60) #time between checks is set to one minute (60 seconds) 
