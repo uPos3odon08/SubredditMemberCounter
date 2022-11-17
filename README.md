@@ -1,5 +1,5 @@
 Setup: 
-1. pip -R install requirements.txt
+1. pip -R install Requirements.txt
 2. python3 Main.py
 and that's it, to exit press ctrl+c
 
