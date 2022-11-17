@@ -12,7 +12,7 @@ subreddit = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]")
 
 
 
-
+print("Author = u/Pos3odon08")
 
 x = 1
 while True: 
