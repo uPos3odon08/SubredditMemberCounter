@@ -10,12 +10,14 @@ reddit = praw.Reddit(
 subs = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]").subscribers
 subreddit = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]")
 
-now = datetime.now()
 
-current_time = now.strftime("%Hh %Mm %Ss")
+
+
 
 x = 1
 while True: 
+ now = datetime.now()
+ current_time = now.strftime("%Hh %Mm %Ss")
  print(subreddit.display_name, end= '')
  print("     subs", subs, end= '') 
  print("     🕒 =", current_time)
