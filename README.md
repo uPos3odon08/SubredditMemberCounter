@@ -25,4 +25,4 @@ Setup:
 
 and that's it, to exit press ctrl+c
 
-The script works by gathering the info speciaifed in the script from Reddit's api called PRAW
+The script works by gathering the info specified in the script from Reddit's api called PRAW
