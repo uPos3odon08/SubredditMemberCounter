@@ -10,13 +10,15 @@ logging.basicConfig(filename="SubMembers.log",
 logger=logging.getLogger() 
 logger.setLevel(logging.INFO)
 
+sub=("[FILL IN THE NAME OF THE SUBREDDIT WITHOUT THE r/]") #Provides the entire script with what subreddit to track
+
 reddit = praw.Reddit(
     client_id="YOUR CLIENT ID HERE",
     client_secret="YOUR CLIENT SECRET HERE",
     user_agent="subreddit member amount scraper 1.5 by u/[YOUR REDDIT USERNAME HERE]",
 )
 
-subreddit = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]") #let's the script know what subreddit to print the name of 
+subreddit = reddit.subreddit(sub) 
 
 
 
@@ -24,7 +26,7 @@ print("Author = u/Pos3odon08")
 
 while True: 
  now = datetime.now()
- subs = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]").subscribers #let's the script know what subred dit to check
+ subs = reddit.subreddit(sub).subscribers
  current_time = now.strftime("%Hh %Mm %Ss") 
  print("\033[1;93m",subreddit.display_name, end= '')
  print("     subs", subs, end= '') 
