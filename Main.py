@@ -1,6 +1,14 @@
 import praw
 import time
+import logging
 from datetime import datetime
+
+logging.basicConfig(filename="SubMembers.log", 
+					format='%(asctime)s %(message)s', 
+					filemode='w') 
+
+logger=logging.getLogger() 
+logger.setLevel(logging.INFO)
 
 reddit = praw.Reddit(
     client_id="YOUR CLIENT ID HERE",
@@ -21,4 +29,8 @@ while True:
  print(subreddit.display_name, end= '')
  print("     subs", subs, end= '') 
  print("     🕒 =", current_time)
+ logger.info("--------HERE--------")
+ logger.info(subs)
+ logger.info(current_time)
+ logger.info("--------------------")
  time.sleep(60) #time between checks is set to one minute (60 seconds) 
