@@ -26,7 +26,7 @@ while True:
  now = datetime.now()
  subs = reddit.subreddit("[NAME OF THE SUBREDDIT WITHOUT THE r/]").subscribers #let's the script know what subred dit to check
  current_time = now.strftime("%Hh %Mm %Ss") 
- print(subreddit.display_name, end= '')
+ print("\033[1;93m",subreddit.display_name, end= '')
  print("     subs", subs, end= '') 
  print("     🕒 =", current_time)
  logger.info("--------HERE--------")
