@@ -1,6 +1,9 @@
 import praw
 import time
 import logging
+from config import sub
+from config import CLid
+from config import CLscrt
 from datetime import datetime
 
 logging.basicConfig(filename="SubMembers.log", 
@@ -10,11 +13,10 @@ logging.basicConfig(filename="SubMembers.log",
 logger=logging.getLogger() 
 logger.setLevel(logging.INFO)
 
-sub=("[FILL IN THE NAME OF THE SUBREDDIT WITHOUT THE r/]") #Provides the entire script with what subreddit to track
 
 reddit = praw.Reddit(
-    client_id="YOUR CLIENT ID HERE",
-    client_secret="YOUR CLIENT SECRET HERE",
+    client_id=CLid,
+    client_secret=CLscrt,
     user_agent="subreddit member amount scraper 1.5 by u/[YOUR REDDIT USERNAME HERE]",
 )
 
