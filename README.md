@@ -10,7 +10,7 @@ Setup:
 
 5. find your client secret and client id under the app you just created 
 
-6. enter your client id and client secret in the designated places in the script
+6. enter your client id and client secret in the designated places in the "config.py" file
 
 7. then replace "[NAME OF THE SUBREDDIT WITHOUT THE r/]" with the name of the subreddit you wanna see the exact number of members of 
 
