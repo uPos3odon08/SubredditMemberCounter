@@ -17,7 +17,7 @@ logger.setLevel(logging.INFO)
 reddit = praw.Reddit(
     client_id=CLid,
     client_secret=CLscrt,
-    user_agent="subreddit member amount scraper 1.5 by u/[YOUR REDDIT USERNAME HERE]",
+    user_agent="subreddit member amount scraper 1.5 by u/Pos3odon08",
 )
 
 subreddit = reddit.subreddit(sub) 
