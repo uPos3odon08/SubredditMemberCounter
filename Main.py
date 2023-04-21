@@ -1,10 +1,7 @@
 import praw
 import time
 import logging
-from config import sub
-from config import CLid
-from config import CLscrt
-from datetime import datetime
+from config import *
 
 logging.basicConfig(filename="SubMembers.log", 
 					format='%(asctime)s %(message)s', 
